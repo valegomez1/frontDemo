@@ -1,0 +1,24 @@
+<h1>Users</h1>
+<div class="clear"></div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Fisrt Name</th>
+      <th scope="col">Second Name</th>
+      <th scope="col">First Surname</th>
+      <th scope="col">Second Surname</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of users">
+      <td>{{item.firstName}}</td>
+      <td>{{item.secondName}}</td>
+      <td>{{item.firstSurname}}</td>
+      <td>{{item.secondSurname}}</td>
+      <td>{{item.phone}}</td>
+      <td>{{item.address}}</td>
+    </tr>
+  </tbody>
+</table>
